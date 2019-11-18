@@ -4,5 +4,5 @@
   <% @songs.each do |song| %>
     <li><%= link_to song.name, [@artist, song] %></li>
   <% end %>
-  
+  <%= link_to '  Back To Artist  ', artist_path(@artist) %>
 </ul>

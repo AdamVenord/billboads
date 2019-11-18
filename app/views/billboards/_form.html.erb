@@ -1,0 +1,10 @@
+<h1><%= @billboard.id ? 'Edit Billboard' : 'Create A Billboard' %></h1>
+<hr />
+<%= form_for [@artist, @billboard] do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true, autofocus: true %>
+  <br />
+  <%= f.label :body %>
+  <%= f.text_area :body, required: true %>
+  <%= f.submit %>
+<% end %>
